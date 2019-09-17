@@ -1,3 +1,3 @@
-// build time:Wed Sep 18 2019 06:00:03 GMT+0800 (GMT+08:00)
-var OriginTitle=document.title;var titleTime;document.addEventListener("visibilitychange",function(){if(document.hidden){$('[rel="icon"]').attr("href","/img/TEP.ico");document.title="(???)Erroring ~";clearTimeout(titleTime)}else{$('[rel="icon"]').attr("href","/favicon.ico");document.title="(�??)just a joke ~"+OriginTitle;titleTime=setTimeout(function(){document.title=OriginTitle},2e3)}});
+// build time:Wed Sep 18 2019 06:28:11 GMT+0800 (GMT+08:00)
+var OriginTitle=document.title;var titleTime;document.addEventListener("visibilitychange",function(){if(document.hidden){$('[rel="icon"]').attr("href","/img/TEP.ico");document.title="Erroring ~";clearTimeout(titleTime)}else{$('[rel="icon"]').attr("href","/favicon.ico");document.title="just a joke QWQ~"+OriginTitle;titleTime=setTimeout(function(){document.title=OriginTitle},2e3)}});
 //rebuild by neat 
