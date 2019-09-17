@@ -79,16 +79,24 @@
 
 
 
-<meta name="description" content="Welcome,my heart.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Herlo">
-<meta property="og:url" content="https://Heorlo.github.io/index.html">
+<meta name="description" content="昨天学了下最大流，今天早晨看了看费用流， 其中最大流经常用于求二分图最大匹配及最短路，费用流的题经常需要添加一个超级源点及超级汇点，人为设置流量及费用（流量一般为1，费用一般为最短路径）将原来的不知道什么题转化为费用流。 留坑。🐷 小填一下坑。 还有，淦，上次银川网络流居然WA了。 有上下界无源汇可行流问题一般的，定义一个网络是一个加权的有向图G=(V, E, C), E中的每条弧(u, v)都">
+<meta property="og:type" content="article">
+<meta property="og:title" content="flow">
+<meta property="og:url" content="https://Heorlo.github.io/2019/09/17/flow/index.html">
 <meta property="og:site_name" content="Herlo">
-<meta property="og:description" content="Welcome,my heart.">
+<meta property="og:description" content="昨天学了下最大流，今天早晨看了看费用流， 其中最大流经常用于求二分图最大匹配及最短路，费用流的题经常需要添加一个超级源点及超级汇点，人为设置流量及费用（流量一般为1，费用一般为最短路径）将原来的不知道什么题转化为费用流。 留坑。🐷 小填一下坑。 还有，淦，上次银川网络流居然WA了。 有上下界无源汇可行流问题一般的，定义一个网络是一个加权的有向图G=(V, E, C), E中的每条弧(u, v)都">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://uploadfiles.nowcoder.com/images/20190914/621368821_1568417325435_221383780408468ACB2D25D35EF3F3FC">
+<meta property="og:image" content="https://uploadfiles.nowcoder.com/images/20190914/621368821_1568417363939_63081865F0313E831204A0900D49F087">
+<meta property="og:image" content="https://uploadfiles.nowcoder.com/images/20190914/621368821_1568418220897_A9E47BD97771FB97BC2D24CDE152C151">
+<meta property="og:image" content="https://uploadfiles.nowcoder.com/images/20190914/621368821_1568418236223_6132CAFECECBF42DEEAB9D120AC4BAAB">
+<meta property="og:image" content="https://uploadfiles.nowcoder.com/images/20190914/621368821_1568418607709_F59487503BEBF2624ABAA122D0DDB34A">
+<meta property="og:image" content="https://uploadfiles.nowcoder.com/images/20190914/621368821_1568419316153_CCFDB256FDE1566779889D547681FA07">
+<meta property="og:updated_time" content="2019-09-17T06:10:06.202Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Herlo">
-<meta name="twitter:description" content="Welcome,my heart.">
+<meta name="twitter:title" content="flow">
+<meta name="twitter:description" content="昨天学了下最大流，今天早晨看了看费用流， 其中最大流经常用于求二分图最大匹配及最短路，费用流的题经常需要添加一个超级源点及超级汇点，人为设置流量及费用（流量一般为1，费用一般为最短路径）将原来的不知道什么题转化为费用流。 留坑。🐷 小填一下坑。 还有，淦，上次银川网络流居然WA了。 有上下界无源汇可行流问题一般的，定义一个网络是一个加权的有向图G=(V, E, C), E中的每条弧(u, v)都">
+<meta name="twitter:image" content="https://uploadfiles.nowcoder.com/images/20190914/621368821_1568417325435_221383780408468ACB2D25D35EF3F3FC">
 
 
 
@@ -118,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="https://Heorlo.github.io/">
+  <link rel="canonical" href="https://Heorlo.github.io/2019/09/17/flow/">
 
 
 
 
 
-  <title>Herlo</title>
+  <title>flow | Herlo</title>
   
 
 
@@ -143,8 +151,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -277,9 +284,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -309,9 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/17/flow/" itemprop="url">flow</a></h1>
+          <h1 class="post-title" itemprop="name headline">flow</h1>
         
 
         <div class="post-meta">
@@ -361,9 +366,7 @@
       
 
       
-        
-          
-            <p>昨天学了下最大流，今天早晨看了看费用流，<br> 其中最大流经常用于求二分图最大匹配及最短路，费用流的题经常需要添加一个超级源点及超级汇点，人为设置流量及费用（流量一般为1，费用一般为最短路径）将原来的不知道什么题转化为费用流。</p>
+        <p>昨天学了下最大流，今天早晨看了看费用流，<br> 其中最大流经常用于求二分图最大匹配及最短路，费用流的题经常需要添加一个超级源点及超级汇点，人为设置流量及费用（流量一般为1，费用一般为最短路径）将原来的不知道什么题转化为费用流。</p>
 <p>留坑。🐷</p>
 <p>小填一下坑。</p>
 <p>还有，淦，上次银川网络流居然WA了。</p>
@@ -387,8 +390,6 @@
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">const</span> ll     base=<span class="number">233</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN=<span class="number">1e5</span>+<span class="number">10</span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pi  acos(-1.0)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> INF  0x3f3f3f3f</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> mod   1e9+7</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> lson rt&lt;&lt;1,l,mid</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> endll printf(<span class="meta-string">"\n"</span>)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pii pair<span class="meta-string">&lt;int, int&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> rson rt*2+1,mid+1,r</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> s1(a) scanf(<span class="meta-string">"%d"</span>,&amp;a)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> stop system(<span class="meta-string">"pause"</span>)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> lowbit(x)  ((x)&amp;(-x))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> s2(a,b) scanf(<span class="meta-string">"%d %d"</span>,&amp;a,&amp;b)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> mem(a,b) memset(a,b,sizeof(a))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> s3(a,b,c) scanf(<span class="meta-string">"%d %d %d"</span>,&amp;a,&amp;b,&amp;c)</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Graph</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> tot,head[MAXN];</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">IN</span>&#123;</span><span class="keyword">int</span> v,next,w,c;&#125;edge[MAXN&lt;&lt;<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span>&#123;mem(head,<span class="number">-1</span>);tot=<span class="number">0</span>;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">addedge</span><span class="params">(<span class="keyword">int</span> u,<span class="keyword">int</span> v,<span class="keyword">int</span> w,<span class="keyword">int</span> c)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        edge[tot].v=v;edge[tot].w=w;</span><br><span class="line">        edge[tot].c=c;edge[tot].next=head[u];</span><br><span class="line">        head[u]=tot++;</span><br><span class="line">        <span class="comment">//</span></span><br><span class="line">        edge[tot].v=u;edge[tot].w=<span class="number">0</span>;</span><br><span class="line">        edge[tot].c=-c;edge[tot].next=head[v];</span><br><span class="line">        head[v]=tot++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">Start</span><span class="params">(<span class="keyword">int</span> u)</span></span>&#123;<span class="keyword">return</span> head[u];&#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">To</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;<span class="keyword">return</span> edge[i].v;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">Val</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;<span class="keyword">return</span> edge[i].w;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">Cost</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;<span class="keyword">return</span> edge[i].c;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">Next</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;<span class="keyword">return</span> edge[i].next;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Res</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> v)</span></span>&#123;edge[i].w-=v;&#125;</span><br><span class="line">&#125;G;</span><br><span class="line"><span class="keyword">int</span> n,m,e;<span class="comment">//每边花费</span></span><br><span class="line"><span class="keyword">int</span> s,t;</span><br><span class="line"><span class="keyword">int</span> sum;<span class="comment">//建立新图中源点的总流出值</span></span><br><span class="line"><span class="keyword">int</span> add;<span class="comment">//建新图的时候删去的下界总流量</span></span><br><span class="line"><span class="keyword">int</span> du[MAXN];<span class="comment">//某点向外流出的附加边总值与流进的附加边总权值之差</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">input</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    s2(n,m);G.init();</span><br><span class="line">    mem(du,<span class="number">0</span>);add=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;m;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> u,v;<span class="keyword">char</span> tt[<span class="number">2</span>];</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%d%s"</span>,&amp;u,&amp;v,tt);</span><br><span class="line">        <span class="keyword">char</span> t=tt[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">if</span>(t==<span class="string">'A'</span>)<span class="comment">//A上界INF下界1，为了消除下界影响建立附加边u--&gt;汇点--&gt;源点--&gt;v</span></span><br><span class="line">        &#123;</span><br><span class="line">            du[u]--;du[v]++;<span class="comment">//u点加上下界值（流出</span></span><br><span class="line">            add+=e;<span class="comment">//统计总的减去的下界流量值</span></span><br><span class="line">            G.addedge(u,v,INF,e);<span class="comment">//</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(t==<span class="string">'B'</span>)<span class="comment">//B上界1下界1</span></span><br><span class="line">        &#123;</span><br><span class="line">            du[u]--;du[v]++;</span><br><span class="line">            add+=e;<span class="comment">//(0,0)的边不用建了</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(t==<span class="string">'C'</span>)<span class="comment">//下界0上界INF</span></span><br><span class="line">            G.addedge(u,v,INF,e);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(t==<span class="string">'D'</span>)<span class="comment">//上界1下界1</span></span><br><span class="line">            G.addedge(u,v,<span class="number">1</span>,e);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//添加附加边</span></span><br><span class="line">    s=<span class="number">0</span>,t=n+<span class="number">1</span>,sum=<span class="number">0</span>;<span class="comment">//用于判断是否满足源点满流</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(du[i]&gt;<span class="number">0</span>)<span class="comment">//需要添加流入的边</span></span><br><span class="line">            sum+=du[i],G.addedge(s,i,du[i],<span class="number">0</span>);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(du[i]&lt;<span class="number">0</span>)</span><br><span class="line">            G.addedge(i,t,-du[i],<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> flow[MAXN];<span class="comment">//</span></span><br><span class="line"><span class="keyword">int</span> vis[MAXN],dis[MAXN];<span class="comment">//用于SPFA</span></span><br><span class="line"><span class="keyword">int</span> pre[MAXN],rec[MAXN];<span class="comment">//用于回溯</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">SPFA</span><span class="params">(<span class="keyword">int</span> s,<span class="keyword">int</span> t)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    mem(vis,<span class="number">0</span>);mem(dis,INF);</span><br><span class="line">    <span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt;q;q.push(s);</span><br><span class="line">    dis[s]=<span class="number">0</span>;flow[s]=INF;</span><br><span class="line">    <span class="keyword">while</span>(!q.empty())</span><br><span class="line">    &#123;</span><br><span class="line">        s=q.front();q.pop();vis[s]=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=G.Start(s);~i;i=G.Next(i))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> v=G.To(i);</span><br><span class="line">            <span class="keyword">if</span>(G.Val(i)&lt;=<span class="number">0</span>) <span class="keyword">continue</span>;<span class="comment">//不存在增广路</span></span><br><span class="line">            <span class="keyword">if</span>(dis[v]&gt;dis[s]+G.Cost(i))</span><br><span class="line">            &#123;</span><br><span class="line">                dis[v]=dis[s]+G.Cost(i);</span><br><span class="line">                pre[v]=s;rec[v]=i;</span><br><span class="line">                flow[v] = min(flow[s],G.Val(i));</span><br><span class="line">                <span class="keyword">if</span>(!vis[v]) vis[v]=<span class="number">1</span>,q.push(v);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(dis[t]==INF) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">return</span> flow[t];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">mcmf</span><span class="params">(<span class="keyword">int</span> s,<span class="keyword">int</span> t)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> maxflow=<span class="number">0</span>,mincost=<span class="number">0</span>,minflow;</span><br><span class="line">    <span class="keyword">while</span>((minflow=SPFA(s,t))!=<span class="number">-1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        maxflow+=minflow;</span><br><span class="line">        mincost+=dis[t]*minflow;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> k=t;k!=s;k=pre[k])</span><br><span class="line">            G.Res(rec[k],minflow),G.Res(rec[k]^<span class="number">1</span>,-minflow);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(maxflow!=sum) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">return</span> mincost+add;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T,S;</span><br><span class="line">    s3(T,S,e);</span><br><span class="line">    <span class="keyword">while</span>(T--)</span><br><span class="line">    &#123;</span><br><span class="line">        input();</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,mcmf(s,t));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//stop;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-          
-        
       
     </div>
     
@@ -405,144 +406,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Heorlo.github.io/2019/08/15/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Herlo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Herlo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/15/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-15T17:53:02+08:00">
-                2019-08-15
-              </time>
+              <a href="/2019/08/15/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -552,10 +437,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -563,6 +449,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -583,8 +473,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -626,6 +525,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#有上下界无源汇可行流问题"><span class="nav-number">1.</span> <span class="nav-text">有上下界无源汇可行流问题</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -766,6 +681,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
